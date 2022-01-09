@@ -4,35 +4,33 @@ var day = new Date().getUTCDay() - 1;
 
 function getMessageOfTheDay() {
   switch (day) {
-    case 0:
-      return "Monday ";
-      break;
-    case 1:
-      return "Monday ";
-      break;
     case 2:
-      return "Monday afternoon ";
+      return "Monday ";
       break;
     case 3:
-      return "Tuesday ";
+      return "Monday ";
       break;
     case 4:
-      return "Friday ";
+      return "Monday afternoon ";
       break;
     case 5:
-      return "Saturday ";
+      return "Tuesday ";
       break;
     case 6:
+      return "Friday ";
+      break;
+    case 7:
+      return "Saturday ";
+      break;
+    case 1:
       return "Despair Sunday ";
       break;
-
+    default:
+	return "Weirdge ";
   }
 }
 
 var classes = document.getElementById("messageOfTheDay").getAttribute('class').split(' ');
-classes.push('day-' + days[day].toLowerCase());
 document.getElementById("messageOfTheDay").setAttribute('class', classes.join(' '))
 document.getElementById("messageOfTheDay").innerHTML = getMessageOfTheDay();
 
-console.log("Below is the HTML code for or `h1`. Notice the added day-{DAY-OF-WEEK}");
-console.log(document.getElementById("messageOfTheDay"));
