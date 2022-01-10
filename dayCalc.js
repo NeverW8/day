@@ -4,25 +4,25 @@ var day = new Date().getUTCDay() - 1;
 
 function getMessageOfTheDay() {
   switch (day) {
-    case 2:
+    case 0:
       return "Monday ";
-      break;
-    case 3:
-      return "Monday ";
-      break;
-    case 4:
-      return "Monday afternoon ";
-      break;
-    case 5:
-      return "Tuesday ";
-      break;
-    case 6:
-      return "Friday ";
-      break;
-    case 7:
-      return "Saturday ";
       break;
     case 1:
+      return "Monday ";
+      break;
+    case 2:
+      return "Monday afternoon ";
+      break;
+    case 3:
+      return "Tuesday ";
+      break;
+    case 4:
+      return "Friday ";
+      break;
+    case 5:
+      return "Saturday ";
+      break;
+    case 6:
       return "Despair Sunday ";
       break;
     default:
